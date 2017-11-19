@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <p>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Inicio</p>
+        <p>
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            Notificaciones</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            Mensajes</p>
+        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+        <input type="text" placeholder="  Buscar en Twitter">
+        <img class="user" src="assets/user.jpg" alt="Charlie Cox">
+        <button>Twittear</button>
+    </header>
+    <section>
+        <div class="introduction">
+            <h1>Reto de código</h1>
+            <br>
+            <p>Hola,
+                <br> Soy front-end developer jr.</p>
+            <hr>
+            <p>CÓDIGO</p>
+        </div>
+    </section>
+    <section class="box-message">
+        <div class="box">
+            <textarea name='texto' type="text" name="insert-text" id="insert-text" placeholder="¿Qué esta pasando?" cols="70"></textarea>
+            <hr>
+            <button id="save" type="submit" class="btn">TWEET</button>
+            <span data-number='140' id="counter">140</span>
+        </div>
+    </section>
+    <div class="container-tweet">
+        <ul id="container-text">
+        </ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
