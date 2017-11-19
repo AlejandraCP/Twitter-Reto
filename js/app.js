@@ -5,6 +5,7 @@ var counter = document.getElementById('counter');
 
 button.addEventListener('click', tweet);
 boxText.addEventListener('keyup', countChar);
+boxText.addEventListener('keyup', addRow);
 boxText.addEventListener('keyup', buttonAble);
 
 var numChar = parseInt(counter.dataset.number);
@@ -54,5 +55,18 @@ function buttonAble() {
         button.classList.add('buttonDisable');
     } else if (numChar >= 0) {
         button.classList.remove('buttonDisable');
+    }
+}
+
+function addRow(event) {
+    var numberColum = boxText.getAttribute('cols');
+    var numberRow = boxText.getAttribute('rows');
+    if (boxText.value.length !== 0) {
+        if (event.keyCode == 13 || parseInt(boxText.value.length) % 80 == 0) {
+            var rowsFinal = parseInt(numberRow) + 1;
+            boxText.setAttribute('rows', rowsFinal);
+        }
+    } else {
+        boxText.setAttribute('rows', 2);
     }
 }
