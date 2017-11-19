@@ -70,3 +70,9 @@ function addRow(event) {
         boxText.setAttribute('rows', 2);
     }
 }
+
+function time() {
+    var actualDate = new Date();
+    var actualHour = actualDate.getHours() + ":" + actualDate.getMinutes();
+    return actualHour;
+}
