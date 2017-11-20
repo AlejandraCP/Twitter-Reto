@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <title>Twitter</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  <meta charset="UTF-8">
+  <title>Twitter</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <p>
-            <i class="fa fa-home" aria-hidden="true"></i>
-            Inicio</p>
-        <p>
-            <i class="fa fa-bell-o" aria-hidden="true"></i>
+  <header>
+    <p>
+      <i class="fa fa-home" aria-hidden="true"></i>
+      Inicio</p>
+    <p>
+    <i class="fa fa-bell-o" aria-hidden="true"></i>
             Notificaciones</p>
-        <p>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            Mensajes</p>
-        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-        <input type="text" placeholder="  Buscar en Twitter">
-        <i class="fa fa-search" aria-hidden="true" id="search"></i>
-        <img class="user" src="assets/user.jpg" alt="Charlie Cox">
-        <button>Twittear</button>
-    </header>
-    <section>
-        <div class="introduction">
-            <div><img id="cover" src="assets/cover.jpg" alt="cover"></div>
-            <img src="assets/user.jpg" alt="profile" id="profile-img">
-            <div>
-                <p>Richad Cox</p>
-                <p class="gray">@Richard2017</p>
-                <div>
-                    <span class="gray">Tweets</span>
-                    <span class="gray">Siguiendo</span>
-                    <span class="gray">Seguidores</span>
-                    <br>
-                    <span class="number">6</span>
-                    <span class="number">49</span>
-                    <span class="number">29</span>
-                </div>
-            </div>
+    <p>
+      <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      Mensajes
+    </p>
+    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+    <input type="text" placeholder="  Buscar en Twitter">
+    <i class="fa fa-search" aria-hidden="true" id="search"></i>
+    <img class="user" src="assets/user.jpg" alt="Charlie Cox">
+    <button>Twittear</button>
+  </header>
+  <section>
+    <div class="introduction">
+      <div>
+        <img id="cover" src="assets/cover.jpg" alt="cover">
+      </div>
+      <img src="assets/user.jpg" alt="profile" id="profile-img">
+      <div>
+        <p>Richad Cox</p>
+        <p class="gray">@Richard2017</p>
+        <div>
+          <span class="gray">Tweets</span>
+          <span class="gray">Siguiendo</span>
+          <span class="gray">Seguidores</span>
+          <br>
+          <span class="number">6</span>
+          <span class="number">49</span>
+          <span class="number">29</span>
         </div>
+      </div>
+    </div>
     </section>
     <section class="box-message">
-        <div class="box">
-            <textarea name='texto' id="insert-text" placeholder="¿Qué esta pasando?" rows="2" cols="70"></textarea>
-            <hr>
-            <button id="save" type="submit" class="btn">TWEET</button>
-            <span  id="counter">140</span>
-        </div>
+      <div class="box">
+        <textarea name='texto' id="insert-text" placeholder="¿Qué esta pasando?" rows="2" cols="70"></textarea>
+        <hr>
+        <button id="save" type="submit" class="btn">TWEET</button>
+        <span  id="counter">140</span>
+      </div>
     </section>
     <div class="container-tweet">
-        <!-- <ul id="container-text">
-        </ul> -->
     </div>
     <img id="follow" src="assets/follow.png" alt="Suguerencia a seguir">
     <img id="trend" src="assets/trend.png" alt="Tendencias">
