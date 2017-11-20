@@ -19,31 +19,43 @@
             Mensajes</p>
         <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
         <input type="text" placeholder="  Buscar en Twitter">
+        <i class="fa fa-search" aria-hidden="true" id="search"></i>
         <img class="user" src="assets/user.jpg" alt="Charlie Cox">
         <button>Twittear</button>
     </header>
     <section>
         <div class="introduction">
-            <h1>Reto de código</h1>
-            <br>
-            <p>Hola,
-                <br> Soy front-end developer jr.</p>
-            <hr>
-            <p>CÓDIGO</p>
+            <div><img id="cover" src="assets/cover.jpg" alt="cover"></div>
+            <img src="assets/user.jpg" alt="profile" id="profile-img">
+            <div>
+                <p>Richad Cox</p>
+                <p class="gray">@Richard2017</p>
+                <div>
+                    <span class="gray">Tweets</span>
+                    <span class="gray">Siguiendo</span>
+                    <span class="gray">Seguidores</span>
+                    <br>
+                    <span class="number">6</span>
+                    <span class="number">49</span>
+                    <span class="number">29</span>
+                </div>
+            </div>
         </div>
     </section>
     <section class="box-message">
         <div class="box">
-            <textarea name='texto' type="text" name="insert-text" id="insert-text" placeholder="¿Qué esta pasando?" cols="70"></textarea>
+            <textarea name='texto' id="insert-text" placeholder="¿Qué esta pasando?" rows="2" cols="70"></textarea>
             <hr>
             <button id="save" type="submit" class="btn">TWEET</button>
-            <span data-number='140' id="counter">140</span>
+            <span  id="counter">140</span>
         </div>
     </section>
     <div class="container-tweet">
-        <ul id="container-text">
-        </ul>
+        <!-- <ul id="container-text">
+        </ul> -->
     </div>
+    <img id="follow" src="assets/follow.png" alt="Suguerencia a seguir">
+    <img id="trend" src="assets/trend.png" alt="Tendencias">
     <script src="js/app.js"></script>
 </body>
 </html>
